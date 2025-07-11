@@ -1,0 +1,6 @@
+total=set(input("enter roll no of all students separated by space:").split())
+cp=set(input("enter roll no of cricket players separated by space:").split())
+fp=set(input("enter roll no of football players separated by space:").split())
+print("Student who plays both:",(cp & fp))
+print("student who plays only one:",(cp^fp))
+print("student who plays neither of them",(total-(cp | fp)))
